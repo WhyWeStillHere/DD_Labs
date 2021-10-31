@@ -1,0 +1,47 @@
+- name: Run simple blog
+  hosts: [group_debian, group_centos]
+  become: yes
+  tasks:
+  - name: "Download source app"
+    ansible.builtin.git:
+      repo: 'https://github.com/greyli/todoism.git'
+      dest: /home/mftiedu/whywestillhere/todoism
+      clone: yes
+
+  - name: "Install venv tools for Debian"
+    apt:
+      name: ['virtualenv', 'python3-virtualenv', 'python-setuptools']
+      state: latest
+    when: os_family == "Debian"
+
+  - name: "Install specified python requirements"
+    pip:
+      requirements: /home/mftiedu/whywestillhere/todoism/requirements.txt
+      virtualenv: "{{ venv_path }}/venv"
+
+  - name: "Create venv command template"
+    template: src=venv_exec.j2 dest={{ venv_path }}/exec mode=755
+
+  - name: "Initdb"
+    command: "{{ venv_path }}/exec flask initdb"
+    args:
+      chdir: /home/mftiedu/whywestillhere/todoism/todoism/
+    environment:
+        LC_ALL: en_US.utf-8
+        LANG: en_US.utf-8
+
+  - name: "Compile"
+    command: "{{ venv_path }}/exec flask translate compile"
+    args:
+      chdir: /home/mftiedu/whywestillhere/todoism/todoism/
+    environment:
+        LC_ALL: en_US.utf-8
+        LANG: en_US.utf-8
+
+  - name: "Run application"
+    command: "{{ venv_path }}/exec nohup python3 test_app.py --port=15342  1>/dev/null 2>&1 &"
+    args:
+      chdir: /home/mftiedu/whywestillhere/todoism/
+    environment:
+        LC_ALL: en_US.utf-8
+        LANG: en_US.utf-8
