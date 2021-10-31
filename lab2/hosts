@@ -1,0 +1,23 @@
+[group_centos]
+centos ansible_host=194.87.57.44
+
+[group_debian]
+debian ansible_host=194.87.107.68 
+
+[group_centos:vars]
+ansible_ssh_user=mftiedu
+ansible_ssh_pass=cHONtic
+os_family="RedHat"
+domain="testserver"
+venv_path="/home/mftiedu/whywestillhere/todoism"
+ansible_python_interpreter="/usr/bin/python3.6"
+python_version = "3.6"
+
+[group_debian:vars]
+ansible_ssh_user=mftiedu
+ansible_ssh_pass=cHONtic
+os_family="Debian"
+domain="testserver"
+venv_path="/home/mftiedu/whywestillhere/todoism"
+ansible_python_interpreter="/usr/bin/python3.7"
+python_version = "3.7"

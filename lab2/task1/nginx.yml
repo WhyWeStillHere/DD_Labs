@@ -1,0 +1,43 @@
+- name: Intall nginx
+  hosts: [group_debian, group_centos]
+  become: yes
+  tasks:
+  - name: "Stop previous nginx"
+    service:
+      name: nginx
+      state: stopped
+
+  - name: "Debian setup"
+    block: 
+      - name: "Stop previous apache"
+        service:
+          name: apache2
+          state: stopped
+
+      - name: "Update Debian"
+        apt:
+          update_cache: yes
+
+      - name: "Install nginx for Debian"
+        apt:
+          name: ['nginx']
+          state: latest
+    when: os_family == "Debian"
+
+  - name: "CentOS setup"
+    block: 
+      - name: "Stop previous apache"
+        service:
+          name: httpd
+          state: stopped
+
+      - name: "Install nginx for Centos"
+        yum:
+          name: ['nginx']
+          state: latest
+    when: os_family == "RedHat"
+
+  - name: "Start nginx"
+    service:
+      name: nginx
+      state: started
