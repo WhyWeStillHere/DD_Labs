@@ -1,7 +1,11 @@
+package calculator;
+
 import cern.colt.matrix.impl.DenseDoubleMatrix2D;
 import cern.colt.matrix.linalg.Algebra;
 
 public class AdvancedCalculator {
+  private AdvancedCalculator() {};
+
   static double mult(double a, double b) {
     double [][] firstMatrix = {{a}};
     double [][] secondMatrix = {{b}};
