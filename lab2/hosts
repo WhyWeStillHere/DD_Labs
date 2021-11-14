@@ -6,7 +6,7 @@ debian ansible_host=194.87.107.68
 
 [group_centos:vars]
 ansible_ssh_user=mftiedu
-ansible_ssh_pass=cHONtic
+ansible_ssh_pass={{ centos_ssh_password }}
 os_family="RedHat"
 domain="testserver"
 venv_path="/home/mftiedu/whywestillhere/todoism"
@@ -15,7 +15,7 @@ python_version = "3.6"
 
 [group_debian:vars]
 ansible_ssh_user=mftiedu
-ansible_ssh_pass=cHONtic
+ansible_ssh_pass={{ debian_ssh_password }}
 os_family="Debian"
 domain="testserver"
 venv_path="/home/mftiedu/whywestillhere/todoism"

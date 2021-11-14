@@ -1,5 +1,7 @@
 - name: Run simple blog
   hosts: [group_debian, group_centos]
+  vars_files:
+  - passwd.yml
   become: yes
   tasks:
   - name: "Download source app"
