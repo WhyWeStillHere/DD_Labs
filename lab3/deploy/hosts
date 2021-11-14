@@ -1,0 +1,15 @@
+[group_centos]
+centos ansible_host=194.87.57.44
+
+[group_debian]
+debian ansible_host=194.87.107.68
+
+[group_centos:vars]
+ansible_ssh_user=mftiedu
+ansible_ssh_pass={{ centos_ssh_password }}
+os_family="RedHat"
+
+[group_debian:vars]
+ansible_ssh_user=mftiedu
+ansible_ssh_pass={{ debian_ssh_password }}
+os_family="Debian"
