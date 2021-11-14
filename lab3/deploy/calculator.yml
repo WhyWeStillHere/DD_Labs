@@ -14,7 +14,7 @@
       src: "{{ item }}"
       dest: "/home/mftiedu/whywestillhere/calculator"
     with_items: 
-      - 'lab3/test_app/calculator/target/calculator-1.0-SNAPSHOT.jar'
+      - '../test_app/calculator/target/calculator-1.0-SNAPSHOT.jar'
 
   - name: Deploy Jar File
     become: yes
