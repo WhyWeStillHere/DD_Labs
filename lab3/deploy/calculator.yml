@@ -1,0 +1,21 @@
+- name: Deploy jar file
+  hosts: [group_debian]
+  vars_files:
+  - passwords
+
+  tasks:
+  - name: Creates Deployment directory
+    file:
+      path: "/home/mftiedu/whywestillhere/calculator"
+      state: directory
+
+  - name: Copy Deployment Necessary File 
+    copy:
+      src: "{{ item }}"
+      dest: "/home/mftiedu/whywestillhere/calculator"
+    with_items: 
+      - '../test_app/calculator/target/calculator-1.0-SNAPSHOT.jar'
+
+  - name: Deploy Jar File
+    become: yes
+    shell: cd "/home/mftiedu/whywestillhere/calculator" && nohup java -jar calculator-1.0-SNAPSHOT.jar &

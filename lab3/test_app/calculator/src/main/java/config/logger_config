@@ -1,0 +1,8 @@
+# Logging
+handlers = java.util.logging.FileHandler
+
+# File Logging
+java.util.logging.FileHandler.pattern = %t/calculator_log_%g.log
+java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+java.util.logging.FileHandler.append = true
+java.util.logging.FileHandler.level = INFO
