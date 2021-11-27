@@ -1,0 +1,12 @@
+.searchIMG {
+    opacity: 0.5;
+}
+
+/*.searchIMGContainer:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.searchIMGContainer:hover .searchIMG {
+    opacity: 1;
+    transition: opacity 0.2s;
+}

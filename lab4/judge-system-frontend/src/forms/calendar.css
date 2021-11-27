@@ -1,0 +1,20 @@
+.calendarIMG {
+    opacity: 0.5;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.nonClickable {
+    cursor: default;
+}
+
+.calendarIMGContainer:hover {
+    cursor: pointer;
+}
+
+.calendarIMGContainer:hover .calendarIMG {
+    opacity: 1;
+    transition: opacity 0.2s;
+}

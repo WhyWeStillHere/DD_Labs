@@ -1,0 +1,397 @@
+{
+  "tournament": [
+    {
+      "id": 1,
+      "title": "Open GO tour 2021",
+      "participants": [
+        2
+      ],
+      "description": "text about Open GO tour 2021"
+    },
+    {
+      "id": 2,
+      "title": "GO-PRO RUSSIA 2 division",
+      "participants": [
+        1
+      ],
+      "description": "text about GO-PRO RUSSIA 2 division"
+    },
+    {
+      "id": 3,
+      "title": "GO-Masters INN",
+      "participants": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "description": "text about GO-Masters INN"
+    }
+  ],
+  "users_sign_up": [
+    {
+      "username": "ASA",
+      "password": "sSSasadad",
+      "id": 1
+    },
+    {
+      "username": "czxc",
+      "password": "zxczxczxczxczxc",
+      "id": 2
+    },
+    {
+      "username": "выва",
+      "password": "выффвфвфы",
+      "id": 3
+    },
+    {
+      "username": "ertert",
+      "password": "ertertert",
+      "id": 4
+    },
+    {
+      "username": "abc",
+      "password": "abc",
+      "id": 5
+    }
+  ],
+  "users_sign_in": [
+    {
+      "username": "ASA",
+      "password": "sSSasadad",
+      "id": 1
+    },
+    {
+      "username": "czxc",
+      "password": "zxczxczxczxczxc",
+      "id": 2
+    },
+    {
+      "username": "zxczxczxc",
+      "password": "zxczxczxczxc",
+      "id": 3
+    },
+    {
+      "username": "iuhin",
+      "password": "kjnkjnkjkj",
+      "id": 4
+    },
+    {
+      "username": "выва",
+      "password": "выффвфвфы",
+      "id": 5
+    },
+    {
+      "username": "rfefe",
+      "password": "rtertertert",
+      "id": 6
+    },
+    {
+      "username": "ertert",
+      "password": "ertertert",
+      "id": 7
+    },
+    {
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 8
+    },
+    {
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 9
+    },
+    {
+      "username": "xf",
+      "password": "sfsdfsdf",
+      "id": 10
+    },
+    {
+      "username": "fgdgdf",
+      "password": "gdfgdfg",
+      "id": 11
+    },
+    {
+      "username": "dfgdfg",
+      "password": "dfgdgfdfg",
+      "id": 12
+    },
+    {
+      "username": "вп",
+      "password": "авапва",
+      "id": 13
+    },
+    {
+      "username": "Виктор Калинин",
+      "password": "password",
+      "id": 14
+    },
+    {
+      "username": "Павел Жуков",
+      "password": "password",
+      "id": 15
+    },
+    {
+      "username": "выа",
+      "password": "ываываыва",
+      "id": 16
+    },
+    {
+      "username": "abc",
+      "password": "abc",
+      "id": 17
+    }
+  ],
+  "add_player": [
+    {
+      "tournament_id": "1",
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 1
+    },
+    {
+      "tournament_id": "1",
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 2
+    },
+    {
+      "tournament_id": "1",
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 3
+    },
+    {
+      "tournament_id": "1",
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 4
+    },
+    {
+      "tournament_id": "1",
+      "username": "dfgdfg",
+      "password": "dfgdfgdfgdfg",
+      "id": 5
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 6
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 7
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 8
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 9
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 10
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 11
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 12
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 13
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 14
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 15
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 16
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 17
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 18
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 19
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 20
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 21
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 22
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 23
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 24
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 25
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 26
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 27
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 28
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 29
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 30
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 31
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 32
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 33
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 34
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 35
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 36
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 37
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 38
+    },
+    {
+      "tournament_id": "1",
+      "username": "oihohoi",
+      "password": "kllkjlkjlkj",
+      "id": 39
+    },
+    {
+      "username": "viktor",
+      "password": "molodets",
+      "tournamentId": "1",
+      "id": 40
+    }
+  ],
+  "get_participants": [
+    "Виктор Калинин",
+    "Павел Жуков",
+    "pavel"
+  ],
+  "get_toss": [
+    ["Виктор", "Павел"], ["Андрей", "Александр"], ["Виталий", "Артём"]
+  ]
+}

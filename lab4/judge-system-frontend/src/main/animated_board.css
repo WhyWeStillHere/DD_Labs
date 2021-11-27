@@ -1,0 +1,23 @@
+.picture {
+    animation: picture_fade 0.1s linear;
+}
+
+@keyframes picture_fade {
+    0% {
+        opacity: 0;
+    }
+    /*30% { opacity: 0.4; }*/
+    /*95% { opacity: 0.75; }*/
+    100% {
+        opacity: 1;
+    }
+}
+
+/*.animated_picture {*/
+/*    animation: animated_picture_fade 5s linear;*/
+/*}*/
+
+/*@keyframes animated_picture_fade {*/
+/*    0% { opacity: 1 }*/
+/*    100% { opacity: 0 }*/
+/*}*/
