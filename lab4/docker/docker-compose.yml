@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+    backend:
+        build:
+            context: ..
+            dockerfile: docker/backend-docker
+        ports:
+            - 2222:2222
+        environment:
+            - PORT=2222
+            - DEBUG=0
+        network_mode: "host"
+    frontend:
+        build:
+            context: ..
+            dockerfile: docker/frontend-docker
+        ports:
+            - 3000:3000
+        network_mode: "host"

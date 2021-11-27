@@ -1,0 +1,7 @@
+.modal.dark .modal-header {
+    border-bottom: 1px solid #363535;
+}
+
+.modal.dark .modal-footer {
+    border-top: 1px solid #363535;
+}

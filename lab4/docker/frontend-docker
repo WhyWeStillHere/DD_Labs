@@ -1,0 +1,13 @@
+FROM ubuntu:18.04
+
+RUN apt update && apt -y upgrade
+RUN apt -y install npm curl vim
+RUN npm cache clean -f
+RUN npm install -g n
+RUN n stable
+COPY judge-system-frontend judge-system-frontend
+RUN cd judge-system-frontend && npm install --save && npm install -g json-server
+
+WORKDIR /judge-system-frontend
+
+CMD ./frontend_start.sh
